@@ -1,0 +1,79 @@
+.register {
+  height: 100vh;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  .card {
+    display: flex;
+    background-color: pink;
+    width: 100%;
+    border-radius: 100px;
+    min-height: 10px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: lightblue;
+      background-size: cover;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: black;
+
+      h1 {
+        font-size: 100px;
+        font-style: normal;
+        font-weight: normal;
+      }
+      p {
+      }
+      span {
+        font-size: 14px;
+      }
+      button {
+        width: 70%;
+        padding: 10px;
+        border: none;
+        background-color: lightlue;
+        color: red;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .right {
+      flex: 10;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+
+      h1 {
+        color: black;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input {
+          border: none;
+          border-bottom: 10px solid lightgray;
+          padding: 20px 10px;
+          outline: none;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: red;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

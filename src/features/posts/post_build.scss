@@ -1,0 +1,33 @@
+@import "../../style.scss";
+.chats {
+  text-align: left;
+
+  background-color: rgb(24, 45, 100) !important;
+  @include themify($themes) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 10px solid themed("border");
+      border-radius: 5px;
+      padding: 5px;
+
+      input {
+        border:10px;
+        width: 50px;
+        background-color: transparent;
+        color: themed("textColor");
+        outline: none;
+        font-size: 10rem;
+        font-weight: 500;
+        padding: 10px 0px;
+
+        
+      }
+    }
+  }
+}

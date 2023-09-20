@@ -1,0 +1,89 @@
+@import "../../style.scss";
+
+.share {
+  
+  @include themify($themes) {
+    border-radius: 20px;
+    background-color: themed("bg");
+    color: themed("textColor");
+    margin-bottom: 20px;
+
+    .container {
+      background-color: lightpink;
+
+      padding: 10px;
+      .top {
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+          text-align: left;
+          align-items: center;
+          flex: 300;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          input {
+            border: black;
+            outline: none;
+            padding: 30px 50px;
+            background-color: lightgrey;
+            width: 60%;
+            color: themed("textColor");
+          }
+        }
+        .right {
+          flex: 10;
+          display: flex;
+          justify-content: flex-end;
+          .file {
+            width: 10px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+        }
+      }
+
+     
+
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            span {
+              font-size: 15px;
+              color: black;
+            }
+          }
+        }
+        .right {
+          button {
+            border: none;
+            padding: 15px;
+            color: black;
+            cursor: pointer;
+            background-color: lightgreen;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
